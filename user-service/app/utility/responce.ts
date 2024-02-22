@@ -15,7 +15,7 @@ function successResponce(data: object) {
     return sendResponce(200, "success", data);
 }
 
-function ErrorResponce(code: number = 1000, error: unknown) {
+function errorResponce(code: number = 1000, error: unknown) {
     if(Array.isArray(error)){
         const errorObject = error[0].constraints;
         const errorMessage = errorObject[Object.keys(errorObject)[0]]  || "Error Occured";
@@ -24,4 +24,4 @@ function ErrorResponce(code: number = 1000, error: unknown) {
     return sendResponce(code, `${error}`, error);
 }
 
-export { sendResponce, successResponce, ErrorResponce };
+export { sendResponce, successResponce, errorResponce };

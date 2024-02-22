@@ -10,13 +10,15 @@
   "license": "ISC",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.134",
-    "serverless-azure-functions": "^2.2.1",
     "serverless-offline": "^13.3.3",
     "serverless-plugin-typescript": "^2.1.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "aws-lambda": "^1.0.7"
+    "aws-lambda": "^1.0.7",
+    "joi": "^17.12.1",
+    "reflect-metadata": "^0.2.1",
+    "tsyringe": "^4.8.0"
   }
 }
